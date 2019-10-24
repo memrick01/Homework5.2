@@ -1,0 +1,14 @@
+#Date: 10/15/2019
+#Name: Matt Emrick
+#Class: CSC1700PM
+#Homework 5 Problem 2
+import random
+fp = open("Random.txt", "w" )
+try:
+    for i in range(int(input('How many random numbers?: '))):
+        line = str(random.randint(1, 5000))
+        fp.write(line)
+        print(line)
+except ValueError:
+    finally:
+        fp.close()
